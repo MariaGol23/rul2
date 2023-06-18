@@ -1,0 +1,23 @@
+﻿<Window x:Class="rul2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:rul2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Label Content="Title Company" FontSize="16" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+            <Button Height="45" Width="150" Content="Exit" FontSize="16" HorizontalAlignment="Right" Margin="20 5" Click="Button_Click"/>
+        </Grid>
+
+        <Frame x:Name="FrMain" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+    
+</Window>
